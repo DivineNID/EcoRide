@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoRide - Contact</title>
+    <link rel="stylesheet" href="public/assets/css/style.css">
+    <link rel="stylesheet" href="public/assets/css/responsive.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>EcoRide</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Accueil</a></li>
+                <li><a href="covoiturage.html">Covoiturages</a></li>
+                <li><a href="login.html">Connexion</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form">
+        <h2>Nous contacter</h2>
+        <p>Si vous avez des questions ou souhaitez en savoir plus sur EcoRide, n’hésitez pas à nous contacter via ce formulaire.</p>
+        <form action="send_message.php" method="POST">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Sujet :</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contactez-nous : <a href="mailto:contact@ecoride.com">contact@ecoride.com</a></p>
+        <a href="mentions.html">Mentions légales</a>
+    </footer>
+
+</body>
+</html>

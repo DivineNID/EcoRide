@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covoiturages - EcoRide</title>
+    <link rel="stylesheet" href="public/assets/css/style.css">
+    <link rel="stylesheet" href="public/assets/css/responsive.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>EcoRide</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Accueil</a></li>
+                <li><a href="covoiturage.html">Covoiturages</a></li>
+                <li><a href="login.html">Connexion</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Formulaire de recherche -->
+    <section class="search-section">
+        <h2>Rechercher un covoiturage</h2>
+        <form>
+            <input type="text" placeholder="Ville de départ" required>
+            <input type="text" placeholder="Ville d'arrivée" required>
+            <input type="date" required>
+            <button type="submit">Rechercher</button>
+        </form>
+    </section>
+
+    <!-- Résultats de recherche -->
+    <section class="results">
+        <h2>Résultats de recherche</h2>
+        <div class="trip-card">
+            <img src="images/driver.jpg" alt="Conducteur" class="driver-photo">
+            <div class="trip-info">
+                <p><strong>Conducteur :</strong> JohnDoe (Note : ★★★★☆)</p>
+                <p><strong>Départ :</strong> Paris - 14/10/2024 à 08:00</p>
+                <p><strong>Arrivée :</strong> Lyon - 14/10/2024 à 12:00</p>
+                <p><strong>Prix :</strong> 25 €</p>
+                <p><strong>Places restantes :</strong> 2</p>
+                <p><strong>Écologique :</strong> Oui (Voiture électrique)</p>
+                <button class="detail-btn">Voir Détails</button>
+            </div>
+        </div>
+
+        <!-- Message en cas d'absence de résultats -->
+        <p class="no-results" style="display: none;">Aucun covoiturage trouvé. Essayez de modifier la date.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contactez-nous : <a href="mailto:contact@ecoride.com">contact@ecoride.com</a></p>
+        <a href="mentions.html">Mentions légales</a>
+    </footer>
+
+    <script>
+        // Exemple de script pour gérer l'affichage des résultats
+        const form = document.querySelector('form');
+        const noResultsMessage = document.querySelector('.no-results');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Simuler une recherche et afficher les résultats ici
+            noResultsMessage.style.display = 'none'; // Masquer le message par défaut
+            console.log('Recherche en cours...');
+        });
+    </script>
+
+</body>
+</html>

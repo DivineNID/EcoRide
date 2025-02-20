@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoRide - Connexion</title>
+    <link rel="stylesheet" href="public/assets/css/style.css">
+    <link rel="stylesheet" href="public/assets/css/responsive.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>EcoRide</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Accueil</a></li>
+                <li><a href="covoiturage.html">Covoiturages</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Formulaire de connexion -->
+    <section class="login-section">
+        <h2>Connexion</h2>
+        <form action="process_login.php" method="POST">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="Votre email" required>
+            
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" placeholder="Votre mot de passe" required>
+            
+            <button type="submit">Se connecter</button>
+        </form>
+    </section>
+
+    <!-- Lien vers l'inscription -->
+    <section class="signup-link">
+        <p>Pas encore inscrit ? <a href="signup.html">Créez un compte</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contactez-nous : <a href="mailto:contact@ecoride.com">contact@ecoride.com</a></p>
+        <a href="mentions.html">Mentions légales</a>
+    </footer>
+
+</body>
+</html>

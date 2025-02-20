@@ -1,0 +1,34 @@
+{
+    "name": "ecoride/platform",
+    "description": "Platforme de covoiturage éco-responsable.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "José",
+            "email": "jose@ecoride.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",            // Version minimale de PHP
+        "vlucas/phpdotenv": "^5.5",  // Pour gérer les variables d'environnement via .env
+        "monolog/monolog": "^3.0",   // Gestion des logs
+        "symfony/var-dumper": "^6.0", // Pour déboguer facilement
+        "ext-pdo": "*",              // Extension PHP PDO pour interagir avec la base de données
+        "ext-mbstring": "*"          // Extension mbstring pour le traitement de chaînes
+    },
+    "autoload": {
+        "psr-4": {
+            "EcoRide\\": "src/"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "php artisan migrate"  // Commande post-installation pour appliquer les migrations
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    }
+}

@@ -1,0 +1,74 @@
+/* ============================= */
+/* Styles pour tablettes (768px - 1024px) */
+/* ============================= */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu a {
+        padding: 10px;
+        display: block;
+    }
+}
+
+/* ============================= */
+/* Styles pour mobiles (0px - 768px) */
+/* ============================= */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        width: 80%;
+    }
+
+    .nav-menu {
+        display: none; /* Cache le menu sur mobile */
+    }
+
+    .mobile-menu {
+        display: block; /* Affiche le menu hamburger */
+        text-align: center;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .cta-button {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+/* ============================= */
+/* Petits écrans (jusqu'à 480px) */
+/* ============================= */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    .form-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 12px;
+    }
+}

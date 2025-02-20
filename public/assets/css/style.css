@@ -1,0 +1,93 @@
+/* Styles de base */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f9f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #28a745, #218838);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Conteneur principal */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Boutons */
+.button {
+    display: inline-block;
+    background: #28a745;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s;
+    font-weight: bold;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+.button:hover {
+    background: #218838;
+    transform: translateY(-2px);
+}
+.button:active {
+    transform: translateY(1px);
+}
+
+/* Cartes */
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #218838;
+    color: white;
+    margin-top: 20px;
+    font-weight: bold;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none;
+}
