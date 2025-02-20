@@ -2,7 +2,7 @@
 session_start();
 require 'db.php';
 
-// Vérifier si l'utilisateur est connecté et est un administrateur
+
 if (!isset($_SESSION['admin_id'])) {
     header('Location: login_form.html');
     exit();

@@ -7,7 +7,7 @@ if (!isset($_SESSION['admin_id'])) {
     exit();
 }
 
-// Récupérer tous les employés
+
 $stmt = $pdo->prepare("SELECT * FROM employes");
 $stmt->execute();
 $employes = $stmt->fetchAll();

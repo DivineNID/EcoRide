@@ -7,7 +7,7 @@ if (!isset($_SESSION['admin_id'])) {
     exit();
 }
 
-// Récupérer le nombre de covoiturages par jour
+
 $stmt = $pdo->prepare("SELECT date_depart, COUNT(*) as nb_covoiturages FROM covoiturage GROUP BY date_depart");
 $stmt->execute();
 $covoiturages = $stmt->fetchAll();
